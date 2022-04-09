@@ -1,0 +1,73 @@
+1.First of all, install git if you don't have it yet, and create a GitHub account. ( You can refer to the lesson "Install Git and Create GitHub Account" in the prework. Follow the guidelines given there. Additionally, you can use these resources: Install git, Version control with git)
+
+2.Create a new repository in the GitHub. Name it Iron+ your name. Example: if your name is Alvaro, you will name the repo IronAlvaro.
+I chose  my repositories and then create new after that I created a new repo with the name ironnikos 
+
+3.Clone that repo to your computer.
+in BASH I wrote "git clone https://github.com/phenomenonnk/ironnikos.git"
+
+4.Create a file in that folder. Name it about.txt and add a fun fact about yourself. (You can use the command line: touch nameOfTheFile.txt).
+In bash
+'touch about.txt'
+'echo "I dance" >>about.txt'
+
+
+5.Add the file you just created to the git.
+git add .
+
+6.Commit the changes.
+git commit -m 'changes'
+
+7.Push the changes to the GitHub and check your repository to make sure everything is there.
+git push
+
+Pair Programming Exercise
+1.Fork your classmate's repository.
+my classmate sent me the URL of his repo and the I chose the button fork
+
+
+2.Clone the repository, so that you have it locally and can make changes.
+In BASH I wrote 'git clone https://github.com/phenomenonnk/ironTottas.git'
+
+3.Create a new branch named classmate.
+I created a new branch named 'classmate' using the Github webpage interface
+
+4.Create a new file with your name (ex. maya.txt) and finish the following sentence I enrolled Ironhack's Data Analytics bootcamp because.... When you are done, save the changes.
+I changed the branch to 'classmate' using the command 'git checkout classmate'
+
+Admin@DESKTOP-9N9UGQ5 MINGW64 ~/desktop/Labs/lab-git/ironTottas (classmate)
+$ touch nikos.txt
+Admin@DESKTOP-9N9UGQ5 MINGW64 ~/desktop/Labs/lab-git/ironTottas (classmate)
+$ echo "I enrolled Ironhack's Data Analytics bootcamp because I would like to change my carrer" >>nikos.txt
+
+
+5.Add the changes to the git.
+Admin@DESKTOP-9N9UGQ5 MINGW64 ~/desktop/Labs/lab-git/ironTottas (classmate)
+$ git add .
+warning: LF will be replaced by CRLF in nikos.txt.
+The file will have its original line endings in your working directory
+
+
+6.Commit and push the changes. Now, all the changes should be on your GitHub, inside the forked repository.
+Admin@DESKTOP-9N9UGQ5 MINGW64 ~/desktop/Labs/lab-git/ironTottas (classmate)
+$ git commit -m 'changes to classmate branch'
+[classmate 7ddbaab] changes to classmate branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 nikos.txt
+
+Admin@DESKTOP-9N9UGQ5 MINGW64 ~/desktop/Labs/lab-git/ironTottas (classmate)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 401 bytes | 200.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/phenomenonnk/ironTottas.git
+   1d8769d..7ddbaab  classmate -> classmate
+
+
+
+7.Create a pull request to make changes appear in the original repository.
+
+8.Merge the branch your classmate created. Now everyone's repos should have the original file (about.txt) as well as the new one with your classmate's name.
